@@ -67,7 +67,7 @@
         var keyid = getParameterByName('keyid');
         var key = getParameterByName('key');
         var getIMG = getParameterByName('img');
-        var rasio = getParameterByName('rasio');
+        var getRASIO = getParameterByName('rasio');
     </script>
     <div id="player"></div>
     <script type="text/javascript">
@@ -92,7 +92,7 @@
             width: "100%",
             height: "100%",
             aspectratio: "16:9",
-	    stretching: atob(rasio),
+	    stretching: getRASIO,
             autostart: true,
             cast: {},
             //sharing: {}
