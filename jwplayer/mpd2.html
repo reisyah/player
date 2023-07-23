@@ -52,15 +52,15 @@
 
         playerInstance.setup({
             playlist: [{
-                "image": atob(getIMG),
+                "image": getIMG,
                 "sources": [{
                     "default": false,
                     "type": "application/dash+xml",
-                    "file": atob(get),
+                    "file": get,
                     "drm": {
                         "clearkey": {
-                            "keyId": atob(key),
-                            "key": atob(key2)
+                            "keyId": key,
+                            "key": key2
                         }
                     },
                     "label": "0"
