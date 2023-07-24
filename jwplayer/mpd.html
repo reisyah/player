@@ -70,6 +70,11 @@
         var getIMG = getParameterByName('img');
         var getRASIO = getParameterByName('rasio');
     </script>
+	<div class="Marquee-box">
+   <marquee class="MyMarquee" id="my_marquee" direction="left" behavior="1" scrollamount="6" onmouseover="this.stop()" onmouseout="this.start()">
+     <div> UNTUK FULL SCREEN SILAHKAN AKTIFKAN ROTASI LAYAR LALU MIRINGLAN HPNYA SESUAI DENGAN ARAH YANG NYAMAN | UNTUK PILIH RESOLUSI SILAHKAN KLIK TOMBOL PENGATURAN/RODA GIR PADA POJOK KANAN BAWAH | KALAU NYALEG EH NGELEG CHANNEL YA!|  </marquee>
+ </div>
+ 
     <div id="player"></div>
     <script type="text/javascript">
         var playerInstance = jwplayer("player");
@@ -94,7 +99,7 @@
             height: "100%",
             aspectratio: "16:9",
 	    stretching: getRASIO,
-            autostart: false,
+            autostart: true,
 		mute: false,
             logo: {
                 file:"https://cdn.jsdelivr.net/gh/Arjunaaaaa/lsbtv/logolsbtv.png",
@@ -106,12 +111,7 @@
     </script>
 
 	
-	<div class="Marquee-box">
-   <marquee class="MyMarquee" id="my_marquee" direction="left" behavior="1" scrollamount="6" onmouseover="this.stop()" onmouseout="this.start()">
-     <div> SIARANNYA MUNCUL SETELAH 5-0 MENIT SEBELUM KICK OFF DIMULAI | KALAU NYALEG EH NGELEG CHANNEL YA!| PILIH RESOLUSI PADA CHANNEL *NS) RESOLUSI NAMUN SEBELUM ITU ANDA HARUS MENGINSTAL APLIKASI NS PLAYER SEBAGAI PEMUTAR CHNNELNYA, KALAU MALES INSTAL APK YA PILIH AJA TUH SERVER YANG DISEDIAKAN ! ANDA TUH DAH GEDE, MASA MAU DIAJARIN TERUS SIH</div>
-   </marquee>
- </div>
- 
+	
 
     <!--direct link-->
     <script type='text/javascript'>
