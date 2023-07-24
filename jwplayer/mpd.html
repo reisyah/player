@@ -1,11 +1,11 @@
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 
 <head>
     <meta name="robots" content="noindex, nofollow" />
     <meta name="referrer" content="no-referrer" />
-	 <link rel="stylesheet" href="https://arjunaaaaa.github.io/lsbtv/gaya.css" />
+	
     <style type="text/css">
         body {
             margin: 0;
@@ -17,11 +17,12 @@
             height: 100%;
             position: absolute;
             z-index: 2;
-            top: 0;
+            top: 17px;
             right: 0;
             left: 0;
             bottom: 0px;
         }
+      
     </style>
     <script src="https://ssl.p.jwpcdn.com/player/v/8.27.1/jwpsrv.js"></script>
     <script src="https://ssl.p.jwpcdn.com/player/v/8.27.1/jwplayer.js"></script>
@@ -30,15 +31,19 @@
     <script>
         jwplayer.key = 'XSuP4qMl+9tK17QNb+4+th2Pm9AWgMO/cYH8CI0HGGr7bdjo';
     </script>
+   <link rel="stylesheet" href="https://arjunaaaaa.github.io/lsbtv/gaya.css" />
+   <link rel="stylesheet" href="https://reisyah.github.io/player/jwplayer/style.css" />
+
+  
     <script>
-        // Fungsi untuk memeriksa URL saat halaman dimuat
+        
         function periksaDomain() {
-            var url = window.location.href; // Mendapatkan URL halaman
-            var domainList = ["reisyah.github.io", "arjunaaaaa.github.io", "www.w3schools.com"]; // Daftar domain yang diizinkan
+            var url = window.location.href; 
+            var domainList = ["reisyah.github.io", "arjunaaaaa.github.io", "punya.livebola.repl.co"]; // 
 
             var domainValid = false;
 
-            // Memeriksa apakah URL mengandung salah satu domain yang diizinkan
+            
             for (var i = 0; i < domainList.length; i++) {
                 if (url.indexOf(domainList[i]) !== -1) {
                     domainValid = true;
@@ -46,16 +51,20 @@
                 }
             }
 
-            // Mengarahkan pengguna jika domain tidak valid
+            
             if (!domainValid) {
-                window.location.href = "https://www.google.com"; // Mengarahkan pengguna ke URL yang berbeda jika domain tidak valid
+                window.location.href = "https://linktr.ee/livestreambolatv"; 
             }
         }
     </script>
 
+  
+
 </head>
 
-<body onload="periksaDomain();">
+
+
+<body bgcolor='black' style='margin:0' oncontextmenu='return false' onkeydown='return false' onmousedown='return false' onload="periksaDomain();">
     <script type="text/javascript">
         function getParameterByName(name) {
             name = name.replace(/[\[]/, "\[").replace(/[\]]/, "\]");
@@ -70,12 +79,19 @@
         var getIMG = getParameterByName('img');
         var getRASIO = getParameterByName('rasio');
     </script>
+
+  
 	<div class="Marquee-box">
-   <marquee class="MyMarquee" id="my_marquee" direction="left" behavior="1" scrollamount="6" onmouseover="this.stop()" onmouseout="this.start()">
-     <div> UNTUK FULL SCREEN SILAHKAN AKTIFKAN ROTASI LAYAR LALU MIRINGLAN HPNYA SESUAI DENGAN ARAH YANG NYAMAN | UNTUK PILIH RESOLUSI SILAHKAN KLIK TOMBOL PENGATURAN/RODA GIR PADA POJOK KANAN BAWAH | KALAU NYALEG EH NGELEG CHANNEL YA!|  </marquee>
+   <marquee class="MyMarquee" id="my_marquee" direction="top" behavior="1" scrollamount="5" onmouseover="this.stop()" onmouseout="this.start()">
+     <div> UNTUK FULL SCREEN SILAHKAN AKTIFKAN ROTASI LAYAR LALU MIRINGLAN HPNYA SESUAI DENGAN ARAH YANG NYAMAN | UNTUK PILIH RESOLUSI SILAHKAN KLIK TOMBOL PENGATURAN/RODA GIR PADA POJOK KANAN BAWAH | KALAU NYALEG EH NGELEG GANTI CHANNEL ATAU REFRESH YA!|   </div></marquee>
  </div>
+
+
+  
  
-    <div id="player"></div>
+    <div id="player"> </div>
+ 
+  
     <script type="text/javascript">
         var playerInstance = jwplayer("player");
 
@@ -103,8 +119,10 @@
 		mute: false,
             logo: {
                 file:"https://cdn.jsdelivr.net/gh/Arjunaaaaa/lsbtv/logolsbtv.png",
+              link: 'https://linktr.ee/livestreambolatv',
                 position: 'bottom-right'
              },
+          
             cast: {},
             //sharing: {}
         });
