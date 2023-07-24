@@ -32,6 +32,7 @@
 }
       #stretching-button {
       padding: 3px 3px;
+      margin-right: 3px;
       background-color: blue;
       color: white;
       border: none;
@@ -98,6 +99,7 @@
         var key = getParameterByName('key');
         var getIMG = getParameterByName('img');
         var getRASIO = getParameterByName('rasio');
+      var gons = getParameterByName('ns');
     </script>
 
   <div class="konten-bawah">
@@ -111,7 +113,9 @@
   <div class="konten-atas">
  
     
-   <button class="stretching-button" id="stretching-button">Ganti Aspek Rasio</button>
+   <button id="stretching-button">Ganti Aspek Rasio
+       <button id="stretching-button" onclick="openNewLink()">NS Player</button>
+       
   </div>
    <div id="player"> </div>
  
@@ -144,7 +148,9 @@
             logo: {
                 file:"https://cdn.jsdelivr.net/gh/Arjunaaaaa/lsbtv/logolsbtv.png",
               link: 'https://linktr.ee/livestreambolatv',
-                position: 'bottom-right'
+                position: 'bottom-right',
+
+            
              },
           
             cast: {},
@@ -170,7 +176,15 @@
     </script>
 
 	
-	
+	<script>
+        function openNewLink() {
+            // Replace 'https://www.example.com' with the URL you want to open
+            var newLink = gons;
+            
+            // Open the new link in a new window or tab
+            window.open(newLink, '_blank');
+        }
+  </script>
 
     <!--direct link-->
     <script type='text/javascript'>
