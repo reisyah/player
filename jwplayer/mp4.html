@@ -15,6 +15,44 @@
 
 <style type="text/css">
       html, body {width:100%;height:100%;margin:0;padding:0;overflow:hidden;}
+
+  body {
+            margin: 0;
+            padding: 0;
+        }
+
+        #player {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            z-index: 0;
+            top: 17px;
+            right: 0;
+            left: 0;
+            bottom: 0px;
+        }
+      .konten-atas {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.konten-bawah {
+  position: relative;
+}
+      #stretching-button {
+      padding: 3px 3px;
+      margin-right: 3px;
+      background-color: blue;
+      color: white;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+      font-size: 13px;
+    }
+
+    #stretching-button:hover {
+      background-color: black;
+    }
       div a img{visibility:hidden;}
 body::before {
         position: absolute;
@@ -41,8 +79,34 @@ body::before {
     
     
 <body>
-  <div id="player" style="height:100% ; width: 100%;">
+  <div id="player">
 </div>
+<div class="konten-atas">
+	<div class="Marquee-box">
+   <marquee class="MyMarquee" id="my_marquee" direction="top" behavior="1" scrollamount="5" onmouseover="this.stop()" onmouseout="this.start()">
+     <div> UNTUK FULL SCREEN SILAHKAN AKTIFKAN ROTASI LAYAR LALU MIRINGLAN HPNYA SESUAI DENGAN ARAH YANG NYAMAN | UNTUK PILIH RESOLUSI SILAHKAN KLIK TOMBOL PENGATURAN/RODA GIR PADA POJOK KANAN BAWAH | KALAU NYALEG EH NGELEG GANTI CHANNEL ATAU REFRESH YA!|   </div></marquee>
+  </div>
+
+<div id='fixedban' style='width:100%;margin:auto;text-align:center;float:none;overflow:hidden;display:scroll;position:;bottom:100;z-index:999;-webkit-transform:translateZ(0);'>
+<div>
+<a id='close-fixedban' onclick='document.getElementById("fixedban").style.display = "none";' style='cursor:pointer;'>
+  <img alt='close' src='https://1.bp.blogspot.com/-_A83iDM6JYc/VhtxROLILrI/AAAAAAAADK4/aM4ikIA6aqI/s1600/btn_close.gif' title='close button' style='vertical-align:middle;'/></a>
+
+  
+<div style='text-align:center;display:block;max-width:80%;height:auto;overflow:hidden;margin:auto'>
+  <img src='https://1.bp.blogspot.com/-_A83iDM6JYc/VhtxROLILrI/AAAAAAAADK4/aM4ikIA6aqI/s1600/btn_close.gif' style='vertical-align:middle;margin:-10px;'/>
+		<center>
+		<fieldset class="btn0">
+  <legend class="btn1" >ASPEK RASIO</legend>
+   <button id="stretching-button">FILL/FIT
+       <button id="stretching-button" onclick="openNewLink()">NS Player</button>
+ </a>
+</fieldset>
+		  
+		</center>
+	</div>
+</div>
+  
 <script>
           function getParameterByName(name) {
               name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
@@ -84,9 +148,10 @@ body::before {
 		});		
 
 		</script>
+  <!--
 		<div class="Marquee-box">
    <marquee class="MyMarquee" id="my_marquee" direction="left" behavior="1" scrollamount="6" onmouseover="this.stop()" onmouseout="this.start()">
      <div> KALAU NYALEG EH NGELEG PILIH CHANNEL YA!| PILIH RESOLUSI PADA TITIK TIGA DIPOJOK KANAN BAWAH | DAN PILIH RESOLUSI PADA MENU YANG DISEDIAAIN DIBAWAH | ATAU  ANDA TUH DAH GEDE, MASA MAU DIAJARIN TERUS SIH</div>
    </marquee>
- </div>
+ </div>-->
 </body></html>
