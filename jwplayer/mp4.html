@@ -146,7 +146,35 @@ body::before {
             label: "Lsbtv"
         }]
 		});		
+function toggleStretchingMode() {
+    player.setConfig({
+      stretching: player.getConfig().stretching === "uniform" ? "exactfit" : "uniform"
+    });
+  }
 
+  // Tambahkan event listener ke tombol
+  const stretchingButton = document.getElementById("stretching-button");
+  stretchingButton.addEventListener("click", toggleStretchingMode);
+
+
+
+        // Listener untuk memastikan pemutar JW Player telah dimuat sebelum mengaksesnya
+        jwplayer().on('ready', function () {
+            player = jwplayer('player');
+        });
+    </script>
+
+	
+	<script>
+        function openNewLink() {
+            // Replace 'https://www.example.com' with the URL you want to open
+            var newLink = gons;
+            
+            // Open the new link in a new window or tab
+            window.open(newLink, '_blank');
+        }
+  </script>
+  
 		</script>
   <!--
 		<div class="Marquee-box">
