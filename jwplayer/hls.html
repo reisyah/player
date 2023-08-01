@@ -160,7 +160,7 @@
             width: "100%",
             height: "100%",
             aspectratio: "16:9",
-	    stretching: 'uniform',
+	    stretching: 'exactfit',
             autostart: true,
 		mute: false,
             logo: {
@@ -183,7 +183,7 @@
 
       function toggleStretchingMode() {
     player.setConfig({
-      stretching: player.getConfig().stretching === "uniform" ? "exactfit" : "uniform"
+      stretching: player.getConfig().stretching === "exactfit" ? "lsbtv" : "exactfit"
     });
   }
 
