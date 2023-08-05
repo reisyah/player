@@ -125,9 +125,10 @@
 		<fieldset class="btn0">
   <legend class="btn1" >ASPEK RASIO</legend>
    <button id="stretching-button">FILL/FIT
+   </button>
        <button id="stretching-button" onclick="openNewLink()">NS Player
 
- </a>
+ </button>
 </fieldset>
 		  
 		</center>
@@ -160,7 +161,7 @@
             width: "100%",
             height: "100%",
             aspectratio: "16:9",
-	    stretching: 'exactfit',
+	    stretching: 'lsbtv',
             autostart: true,
 		mute: false,
             logo: {
@@ -183,7 +184,7 @@
 
       function toggleStretchingMode() {
     player.setConfig({
-      stretching: player.getConfig().stretching === "exactfit" ? "lsbtv" : "exactfit"
+      stretching: player.getConfig().stretching === "lsbtv" ? "exactfit" : "lsbtv"
     });
   }
 
